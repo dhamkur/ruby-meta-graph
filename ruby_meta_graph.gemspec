@@ -7,7 +7,6 @@ Gem::Specification.new do |spec|
   spec.version       = RubyMetaGraph::VERSION
   spec.platform      = Gem::Platform::RUBY
   spec.summary       = "Meta Graph API for Ruby"
-  spec.description   = "Meta Graph API v16 for Ruby"
   spec.authors       = ["Adham Kurniawan"]
   spec.email         = "adhamkurniawan29@gmail.com"
   spec.homepage      = "https://rubygemspec.org/gems/ruby_meta_graph"
