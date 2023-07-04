@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.license       = "MIT"
 
-  spec.add_runtime_dependency 'faraday', '~> 2.7', '>= 2.7.9'
+  spec.add_dependency 'faraday', '~> 2.7', '>= 2.7.9'
 end
