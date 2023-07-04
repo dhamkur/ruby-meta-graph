@@ -14,7 +14,7 @@ module RubyMetaGraph
           access_token: @access
         }
       )
-  
+
       return JSON.parse(response.body, object_class: OpenStruct)
     end
   end

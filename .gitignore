@@ -6,3 +6,4 @@ Gemfile.lock
 tests/*/last_*output
 .idea/
 .vendor/
+.env
