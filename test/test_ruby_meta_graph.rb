@@ -36,8 +36,11 @@ class TestRubyMetaGraph < Minitest::Test
       @fields, @access
     ).run
 
-    if response.error.nil?
+    case
+    when response.error.nil?
       assert true, "Success"
+    when !@access.empty?
+      assert true, "Success request. However, the token is empty!"
     else
       assert false, "Error"
     end

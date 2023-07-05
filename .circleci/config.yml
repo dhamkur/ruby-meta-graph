@@ -1,0 +1,32 @@
+version: 2.1
+
+orbs:
+  ruby: circleci/ruby@2.0.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/base:stable
+    environment:
+      TOKEN: "string_token"
+    steps:
+      - checkout
+      - ruby/install:
+          version: "2.7"
+      - run:
+          name: Installing Faraday and Dotenv
+          command: gem install faraday dotenv
+      - run:
+          name: Build gem
+          command: gem build ruby_meta_graph.gemspec
+      - run:
+          name: Install gem
+          command: gem install ./ruby_meta_graph-0.1.0.gem
+      - run:
+          name: Run Testing
+          command: rake test
+
+workflows:
+  ruby_meta_graph:
+    jobs:
+      - test
