@@ -1,6 +1,6 @@
 require "faraday"
 require "json"
-require "ruby_meta_graph/me"
+require_relative "ruby_meta_graph/me"
 
 module RubyMetaGraph
   Faraday::NestedParamsEncoder.sort_params = false
