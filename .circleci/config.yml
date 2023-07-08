@@ -21,7 +21,7 @@ jobs:
           command: gem build ruby_meta_graph.gemspec
       - run:
           name: Install gem
-          command: gem install ./ruby_meta_graph-0.1.0.gem
+          command: gem install ./ruby_meta_graph-0.1.1.gem
       - run:
           name: Run Testing
           command: rake test
