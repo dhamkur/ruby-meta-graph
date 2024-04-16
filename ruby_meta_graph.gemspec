@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.add_dependency 'faraday', '~> 2.7', '>= 2.7.9'
-  spec.add_development_dependency 'dotenv', '~> 2.8', '>= 2.8.1'
+  spec.add_dependency 'dotenv', '~> 2.8', '>= 2.8.1'
 end
