@@ -20,7 +20,7 @@ How to use:
 ```sh
 permission = "id,name,email,birthday"
 your_token = ENV[TOKEN]
-response   = RubyMetaGraph.new(permission, your_token).run
+response   = RubyMetaGraph::Me.new(permission, your_token).run
 
 # The responses will be base on permission you allowed
 response.id
